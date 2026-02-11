@@ -1,0 +1,30 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 1fr auto ;
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    border: 5px solid black;
+}
+.bloc1{
+    background-color: blueviolet;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.bloc2{
+    background-color: aquamarine;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.bloc3{
+    background-color: burlywood;
+    grid-area: 2/2/3/4;
+}
+.bloc4{
+    background-color: chartreuse;
+    grid-column: 1/span3;
+    grid-row: 3/-1;
+}
